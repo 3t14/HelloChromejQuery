@@ -8,15 +8,15 @@ $(function(){
 	$('#confirmButton').click(function(){
 		console.log('confirmButton was clicked');
 		chrome.notifications.create(
-		  'id_'+notify_count,{
+		  'id_'+notify_count++,{
 		      type: 'basic', 
 		      iconUrl: 'isjuku-icon-16.png', 
 		      title: 'Confirmation', 
 		      message: $('#msg').val(),
-		      buttons: [{ title: 'OK',image: ''}, ],
+		      buttons: [{ title: 'OK'}],
 		      priority: 0},
 		  function(notificationId) {
-		  	console.log(notificationId + ' was clicked');
+		  	console.log(notificationId + ' has been shown.');
 		  }		
 		); 
 		$('#msg').val('');

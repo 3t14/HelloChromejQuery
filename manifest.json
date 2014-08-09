@@ -1,0 +1,13 @@
+{
+  "name": "jQuery features confriamtion app",
+  "description": "This app provides a test feature for jQuery behaviors in Chrome apps environment.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "isjuku-icon-16.png", "128": "isjuku-icon-128.png"},
+  "permissions": ["notifications"]
+  }
